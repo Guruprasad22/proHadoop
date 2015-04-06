@@ -12,6 +12,7 @@ import org.apache.hadoop.fs.RemoteIterator;
  * 
  * @author Guruprasad Bobbi
  * Use hdfs APIs to create a file in hdfs and list files under a given directory
+ * run as >> hadoop jar pro-hadoop.jar com.playground.FileOperations
  */
 
 public class FileOperations {
