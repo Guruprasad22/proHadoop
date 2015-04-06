@@ -15,6 +15,12 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
+/**
+ * 
+ * @author Guruprasad Bobbi
+ * word count example
+ * Usage hadoop jar pro-hadoop.jar com.playground.wordcount <input-file-path-in-hdfs> <output-file-path-in-hdfs>
+ */
 public class WordCount {
 
 		public static class WordCountMap extends Mapper<LongWritable,Text,Text,IntWritable> {
@@ -49,7 +55,7 @@ public class WordCount {
 		public static void main(String[] args) throws Exception {
 			
 			if(args.length != 2) {
-				throw new Exception("Ussage hadoop jar pro-hadoop.jar com.playground.WordCount <input-path> <output-path>");
+				throw new Exception("Usage hadoop jar pro-hadoop.jar com.playground.WordCount <input-path> <output-path>");
 			}
 			
 			Configuration conf = new Configuration();

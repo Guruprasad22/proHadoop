@@ -8,6 +8,11 @@ import org.apache.hadoop.fs.LocatedFileStatus;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.fs.RemoteIterator;
 
+/**
+ * 
+ * @author Guruprasad Bobbi
+ * Use hdfs APIs to create a file in hdfs and list files under a given directory
+ */
 
 public class FileOperations {
 	
